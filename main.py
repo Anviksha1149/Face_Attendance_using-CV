@@ -87,14 +87,14 @@ while True:
                 array=np.frombuffer(blob.download_as_string(),np.uint8)
                 imgStudent=cv2.imdecode(array,cv2.COLOR_BGRA2BGR)
                 #update data of database
-                datetimeObject=datetime.strptime(studentInfo['Last_Attendance_Time'],"%y-%m-%d %H:%M:%S")
+                datetimeObject=datetime.strptime(studentInfo['Last_Attendance_Time'],"%Y-%m-%d %H:%M:%S")
                 secondsElapsed=(datetime.now()-datetimeObject).total_seconds()
                 print(secondsElapsed)
                 if secondsElapsed>30:
                     ref=db.reference(f'Students/{id}')
                     studentInfo['Total_Attendance']+=1
                     ref.child('Total_Attendance').set(studentInfo['Total_Attendance'])
-                    ref.child('Last_Attendance_Time').set(datetime.now.strftime("%y-%m-%d %H:%M:%S"))
+                    ref.child('Last_Attendance_Time').set(datetime.now().strftime("%Y-%m-%d %H:%M:%S"))
                 else:
                     modeType=3
                     counter=0
