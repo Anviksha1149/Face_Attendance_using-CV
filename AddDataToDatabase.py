@@ -15,7 +15,7 @@ data={
         "Standing":"G",
         "Starting Year":2021,
         "Year":"Third",
-        "Total_Attendance":89,
+        "Total_Attendance":9,
         "Last_Attendance_Time":"2023-10-5 20:12:23"
         
     },
@@ -26,7 +26,7 @@ data={
         "Standing":"G",
         "Starting Year":2021,
         "Year":"Third",
-        "Total_Attendance":99,
+        "Total_Attendance":6,
         "Last_Attendance_Time":"2023-10-5 12:12:23"
         
     },
@@ -37,7 +37,7 @@ data={
         "Standing":"G",
         "Starting Year":2021,
         "Year":"Third",
-        "Total_Attendance":78,
+        "Total_Attendance":8,
         "Last_Attendance_Time":"2023-10-5 21:12:1"
         
     }
